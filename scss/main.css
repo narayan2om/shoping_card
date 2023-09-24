@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: red;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+body.popup_active .popup {
+  top: 50%;
+}
+
+body.popup_active .overlay {
+  display: block;
+}
+
+.popup {
+  position: fixed;
+  top: -150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400PX;
+  background-color: rgb(205, 21, 21);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 16px;
+  margin: 5px;
+  padding: 5px 20px;
+}/*# sourceMappingURL=main.css.map */

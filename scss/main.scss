@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// @mixin flexProparty{
+//     display: flex;
+//    justify-content: center;
+//    justify-items: center;
+//    flex-direction: column;
+//    align-items: center;
+// }
+// @mixin comancode {
+//     letter-spacing: 1.5rem;
+// }
+
+// @mixin important-text {
+//     color: red;
+//     font-size: 25px;
+//     font-weight: bold;
+//     border: 1px solid blue;
+//   }
+//   @mixin comen{
+//       letter-spacing: 0.5rem;
+//   }
+
+
+// $bg-color:#32709fcc;
+
+// .header{
+//     width: 100vw;
+//     height: 100vh;
+//     @include flexProparty;
+//     background:$bg-color ;
+
+//     h1{
+
+//         @include comen;
+//         letter-spacing: 0.9rem;
+//         color: rgb(15, 204, 94);
+//         font-size: 3rem+3rem;
+//         &:hover{
+//             color: rgb(112, 46, 107);
+//         }
+//     }
+//     p{
+        
+//      @include comen;
+    
+    
+//         color: red;
+//         font-size: 1rem +3rem; 
+//         &:hover{
+//             color: green;
+//         }
+//     }
+// }
+
+// .popup-overlay{
+//     position: fixed;
+//     top: 0px;
+//     left: 0px;
+//     background:red;
+//     width: 100%;
+//     height: 100%;
+// }
+
+.overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background:red;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+body.popup_active .popup{
+    top: 50%;
+}
+body.popup_active .overlay{
+   display: block;
+}
+.popup{
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400PX;
+    background-color:rgb(205, 21, 21) ;
+    padding: 30px;
+    border-radius: 5px;
+ 
+}
+button{
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px 20px;
+}
